@@ -1,0 +1,153 @@
+@mixin flexbox() {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;display: flex; font-size: 0;}
+//GRID
+$mw: 1180px;
+$md1:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+//=============================================================
+header{}
+//=============================================================
+.header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.header:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	z-index: 2;
+}
+.header__body {
+	position: relative;
+	@include flexbox();
+	justify-content: space-between;
+	height: 60px;
+	align-items: center;
+	@media (max-width: $md3+px){
+		height: 50px;
+	}
+}
+.header__logo {
+	z-index: 3;
+	display: block;
+	@media (max-width: $md2+px){
+		font-size: 35px;
+	}
+	@media (max-width: $md3+px){
+		font-size: 25px;
+		padding: 0 0 0 20px;
+	}
+
+}
+.header__burger{
+	display: none;
+	@media (max-width: $md3+px){
+		display: block;
+		position: relative;
+		z-index: 3;
+		width: 30px;
+		height: 20px;
+		&:before, 
+		&:after{
+			content: '';
+			background-color: $textColor;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			transition: all 0.3s ease 0s;
+		}
+		&:before{
+			top: 0;
+		}
+		&:after{
+			bottom: 0;
+		}
+		span{
+			content: '';
+			background-color: $textColor;
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			top: 9px;
+			transition: all 0.3s ease 0s;
+		}
+		&.active:before{
+			transform:rotate(45deg);
+			top: 9px;
+		}
+		&.active:after{
+			transform:rotate(-45deg);
+			bottom: 9px;
+		}
+		&.active span{
+			transform: scale(0);
+		}
+	}
+}
+.header__menu {
+	@media (max-width: $md3+px){
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		transition: all 0.6s ease 0s;
+		background-color: $burgerColor;
+		padding: 70px 10px 20px 20px;
+		&.active{
+			top: 0;
+		}
+	}
+}
+.header__list {
+	@include flexbox();
+	position: relative;
+	z-index: 2;
+	li{
+		margin: 0px 0px 0px 20px;
+	}
+	@media (max-width: $md3+px){
+		display: block;
+		li{
+		margin: 0px 0px 25px 0px;
+		text-align: center;
+		}
+	}
+}
+.header__link {
+	color: $textContent;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1.5px;
+	transition: all 0.4s ease 0s;
+	&:hover{
+			color: $activeClr;
+			transition: all 0.8s ease 0s;
+		}
+}
+
+.active__link{
+	font-weight: 700;
+	color: $textColor;
+	position: relative;
+	&::after{
+		position: absolute;
+		content: '';
+		background-color: $textColor;
+		height: 3px;
+		width: 74px;
+		left: -13px;
+		top: 26px;
+	}
+	
+}

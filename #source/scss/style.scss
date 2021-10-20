@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap');
+
+//mixins=============================================================================
+@mixin flexbox() {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;display: flex; font-size: 0;}
+
+$fontfamily: 'Montserrat', sans-serif;;
+//$minwidth: px;
+$mw: 1100px;//max size of container
+//GRID=================================================================================
+$md1:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+
+//colors==============================================================================
+$textColor: #212121;
+$textContent: #8c8c8c;
+$burgerColor: #f0f0f0;
+$activeClr: #1e88e5;
+$titleClr: #43a047;
+$dealClr: #e53935;
+$footerClr: #f7f7f7;
+
+
+
+//scss================================================================================
+@import "_header";
+@import "_content";
+@import "_footer";
+@import "_generic";
+
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	//min-width: $minwidth;
+	font-family: $fontfamily;
+}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+//INPUT===============================================================================
+input[type=text], input[type=email], input[type=tel],textarea{-webkit-appearance: none;-moz-appearance:none;appearance:none;}
+.input{
+	background-repeat: 0 im !important;
+	width: 100%;
+	display: block;
+	&.focus{}
+}
+
+textarea.input{
+	resize:none;
+	padding: 0px 0px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+	-webkit-transition-delay: 9999s;
+}
+//WRAPPER=============================================================================
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+//my GRID=============================================================================
+.container{max-width: $mw; margin: 0 auto;width: 100%;padding: 0 10px;
+	@media (max-width: $md1+px){max-width: 970px;}
+	@media (max-width: $md2+px){max-width: 750px;}
+	@media (max-width: $md3+px){max-width: none;padding: 0 10px;}
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+

@@ -1,0 +1,38 @@
+//GRID
+$mw: 1180px;
+$md1:$mw+12;
+$md2:992.98;
+$md3:767.98;
+$md4:479.98;
+
+body{
+	@media (max-width: $md3+px){
+		&.lock{
+			overflow: hidden;
+		}
+	}
+}
+.contant {
+	margin: 70px 0px 0px 0px;
+	@media (max-width: $md3+px){
+		margin: 50px 0px 0px 0px;
+	}
+}
+
+
+//block 3===============================================
+/*
+.techniques {
+	&__row {
+		@include flexbox();
+		font-size: 16px;
+		flex-wrap: wrap;
+		margin: 0px -10px;
+		justify-content: space-between;
+	}
+	&__column {
+		flex: 1 1 33.333%;
+		padding: 0px 10px;
+	}*/
+	
+

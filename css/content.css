@@ -1,0 +1,30 @@
+@media (max-width: 767.98px) {
+  body.lock {
+    overflow: hidden;
+  }
+}
+
+.contant {
+  margin: 80px 0px 0px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .contant {
+    margin: 60px 0px 0px 0px;
+  }
+}
+
+.contant__text {
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.contant__text p {
+  margin: 0px 0px 20px 0px;
+}
+
+/*
+.btn{
+	&--w{}
+}
+*/
