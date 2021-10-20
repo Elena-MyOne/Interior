@@ -38,14 +38,6 @@ header{}
 .header__logo {
 	z-index: 3;
 	display: block;
-	@media (max-width: $md2+px){
-		font-size: 35px;
-	}
-	@media (max-width: $md3+px){
-		font-size: 25px;
-		padding: 0 0 0 20px;
-	}
-
 }
 .header__burger{
 	display: none;
@@ -116,12 +108,19 @@ header{}
 	li{
 		margin: 0px 0px 0px 20px;
 	}
+	form{
+		margin: 0px 0px 0px 27px;
+	}
+	@media (max-width: $md2+px){
+		margin: 0px 0px 0px 17px;
+	}
 	@media (max-width: $md3+px){
 		display: block;
 		li{
-		margin: 0px 0px 25px 0px;
+		margin: 20px 0px 40px 0px;
 		text-align: center;
 		}
+
 	}
 }
 .header__link {
@@ -149,5 +148,80 @@ header{}
 		left: -13px;
 		top: 26px;
 	}
-	
+}
+
+nav{
+	padding: 13px 0px 0px 0px;
+}
+.wrapper header{
+	margin: 40px 0px 0px 0px;
+	@media (max-width: $md3+px){
+		margin: 0px 0px 0px 0px;
+	}
+}
+
+// search===============================================
+form {
+	position: relative;
+	height: 40px;
+}
+input {
+	height: 28px;
+	width: 0;
+	padding: 0px 28px 0px 15px;
+	border-bottom: 1px solid transparent;
+	outline: none;
+	background: transparent;
+	transition: .4s cubic-bezier(0, 0.8, 0, 1);
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 4;
+	@media (max-width: $md3+px){
+		right: 20px;
+	}
+}
+input:focus {
+	width: 300px;
+	z-index: 3;
+	border-bottom: 1px solid #212121;
+	background-color: #fff;
+	@media (max-width: $md3+px){
+		width: 220px;
+	}
+}
+button {
+	border: none;
+	height: 23px;
+	width: 23px;
+	position: absolute;
+	z-index: 3;
+	top: 0px;
+	right: 0;
+	cursor: pointer;
+	@media (max-width: $md3+px){
+		right: 20px;
+	}
+}
+button:before {
+	content: url("../img/header/search_224.png");
+}
+input::-webkit-input-placeholder {
+	color: $textContent; 
+	font-style: italic; 
+	background: #ffffff;
+	letter-spacing: 1.5px;
+	font-size: 14px;
+}
+input:-moz-placeholder {
+	color: $textContent; 
+	font-style: italic; 
+	background: #ffffff;
+	letter-spacing: 1.5px;
+}
+input:-ms-input-placeholder {
+	color: $textContent; 
+	font-style: italic; 
+	background: #ffffff;
+	letter-spacing: 1.5px;
 }

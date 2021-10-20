@@ -44,19 +44,6 @@
   display: block;
 }
 
-@media (max-width: 992.98px) {
-  .header__logo {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .header__logo {
-    font-size: 25px;
-    padding: 0 0 0 20px;
-  }
-}
-
 .header__burger {
   display: none;
 }
@@ -142,12 +129,22 @@
   margin: 0px 0px 0px 20px;
 }
 
+.header__list form {
+  margin: 0px 0px 0px 27px;
+}
+
+@media (max-width: 992.98px) {
+  .header__list {
+    margin: 0px 0px 0px 17px;
+  }
+}
+
 @media (max-width: 767.98px) {
   .header__list {
     display: block;
   }
   .header__list li {
-    margin: 0px 0px 25px 0px;
+    margin: 20px 0px 40px 0px;
     text-align: center;
   }
 }
@@ -181,6 +178,102 @@
   width: 74px;
   left: -13px;
   top: 26px;
+}
+
+nav {
+  padding: 13px 0px 0px 0px;
+}
+
+.wrapper header {
+  margin: 40px 0px 0px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .wrapper header {
+    margin: 0px 0px 0px 0px;
+  }
+}
+
+form {
+  position: relative;
+  height: 40px;
+}
+
+input {
+  height: 28px;
+  width: 0;
+  padding: 0px 28px 0px 15px;
+  border-bottom: 1px solid transparent;
+  outline: none;
+  background: transparent;
+  -webkit-transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  transition: 0.4s cubic-bezier(0, 0.8, 0, 1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 4;
+}
+
+@media (max-width: 767.98px) {
+  input {
+    right: 20px;
+  }
+}
+
+input:focus {
+  width: 300px;
+  z-index: 3;
+  border-bottom: 1px solid #212121;
+  background-color: #fff;
+}
+
+@media (max-width: 767.98px) {
+  input:focus {
+    width: 220px;
+  }
+}
+
+button {
+  border: none;
+  height: 23px;
+  width: 23px;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  right: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  button {
+    right: 20px;
+  }
+}
+
+button:before {
+  content: url("../img/header/search_224.png");
+}
+
+input::-webkit-input-placeholder {
+  color: #6c6c6c;
+  font-style: italic;
+  background: #ffffff;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+
+input:-moz-placeholder {
+  color: #6c6c6c;
+  font-style: italic;
+  background: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+input:-ms-input-placeholder {
+  color: #6c6c6c;
+  font-style: italic;
+  background: #ffffff;
+  letter-spacing: 1.5px;
 }
 
 @media (max-width: 767.98px) {
