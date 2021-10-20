@@ -1,5 +1,74 @@
-footer{
-	
+.title {
+	font-size: 18px;
+	line-height: 48px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 }
 
-//==================================================================
+.subtitle {
+	font-size: 62px;
+	line-height: 72px;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: $textColor;
+}
+
+.text{
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 300;
+	color: $textContent;
+}
+
+.btn {
+	width: 212px;
+	height: 45px;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 5px 0px rgba(33,33,33,0.34);
+	border-radius: 22.5px;
+	a{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: $textColor;
+			display: block;
+			&:hover {
+				color: $activeClr;
+				&:after {
+					content:url("../img/arrow.png");
+					padding: 0 0 0 22px;
+				}
+			}
+	}
+}
+
+.block-title {
+	font-size: 36px;
+	line-height: 1.2;
+	font-weight: 700;
+	color: $textColor;
+	span{
+		color: $textContent;
+	}
+}
+
+.explore{
+	a{
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		color: $textColor;
+		&:hover {
+			color: $textColor;
+			&:after {
+				content:url("../img/arrow.png");
+				padding: 0 0 0 12px;
+			}
+		}
+	}
+}
