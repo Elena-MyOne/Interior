@@ -89,8 +89,8 @@ header{}
 	@media (max-width: $md3+px){
 		position: fixed;
 		top: -100%;
-		left: 0;
-		width: 100%;
+		right: 0;
+		width: 50%;
 		height: 100%;
 		overflow: auto;
 		transition: all 0.6s ease 0s;
@@ -99,6 +99,9 @@ header{}
 		&.active{
 			top: 0;
 		}
+	}
+	@media (max-width: $md4+px){
+		width: 80%;
 	}
 }
 .header__list {
@@ -118,7 +121,8 @@ header{}
 		display: block;
 		li{
 		margin: 20px 0px 40px 0px;
-		text-align: center;
+		text-align: right;
+		margin-right: 30px;
 		}
 
 	}
@@ -147,6 +151,9 @@ header{}
 		width: 74px;
 		left: -13px;
 		top: 26px;
+		@media (max-width: $md3+px){
+			width: 67px;
+		}
 	}
 }
 
@@ -178,7 +185,8 @@ input {
 	right: 0;
 	z-index: 4;
 	@media (max-width: $md3+px){
-		right: 20px;
+		width: 180px;
+		border-bottom: 1px solid #212121;
 	}
 }
 input:focus {
@@ -187,7 +195,8 @@ input:focus {
 	border-bottom: 1px solid #212121;
 	background-color: #fff;
 	@media (max-width: $md3+px){
-		width: 220px;
+		width: 180px;
+		background-color: $burgerColor;
 	}
 }
 button {
@@ -199,9 +208,6 @@ button {
 	top: 0px;
 	right: 0;
 	cursor: pointer;
-	@media (max-width: $md3+px){
-		right: 20px;
-	}
 }
 button:before {
 	content: url("../img/header/search_224.png");
@@ -212,6 +218,9 @@ input::-webkit-input-placeholder {
 	background: #ffffff;
 	letter-spacing: 1.5px;
 	font-size: 14px;
+	@media (max-width: $md3+px){
+		background-color: $burgerColor;
+	}
 }
 input:-moz-placeholder {
 	color: $textContent; 
