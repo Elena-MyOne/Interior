@@ -546,6 +546,58 @@ input:-ms-input-placeholder {
   overflow: hidden;
 }
 
+.promo {
+  margin: 120px 0px 0px 0px;
+}
+
+.promo__body {
+  margin: 0 auto;
+  width: 1366px;
+}
+
+.promo__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.promo__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  height: 683px;
+  padding: 228px 50px 0px 50px;
+}
+
+.promo__title {
+  color: #1e88e5;
+}
+
+.promo__subtitle {
+  padding: 15px 0px 20px 0px;
+}
+
+.promo__text {
+  height: 50px;
+  overflow: hidden;
+}
+
+.promo__btn {
+  margin: 30px 0px 0px 0px;
+}
+
+.promo--1 {
+  background: url("../img/3/promo-1.png") center no-repeat;
+}
+
+.promo--2 {
+  background: url("../img/3/promo-2.png") center no-repeat;
+}
+
 /*
 .techniques {
 	&__row {
