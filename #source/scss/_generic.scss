@@ -45,18 +45,48 @@
 	}
 }
 
-.block-title {
+.block__title {
 	font-size: 36px;
 	line-height: 1.2;
 	font-weight: 700;
-	color: $textColor;
-	span{
-		color: $textContent;
+	color: $textContent;
+	.title-active{
+		color: $textColor;
+		display: inline-block;
+	}
+	.underline-bold{
+		position: relative;
+		margin: 0px 20px 0px 10px;
+			&::after{
+			position: absolute;
+			content: "";
+			background-color: $textColor;
+			height: 3px;
+			width: 187px;
+			top: 50px;
+			left: -10px;
+			}
+	}
+	.underline-thin{
+		position: relative;
+		&::after{
+			position: absolute;
+			content: "";
+			background-color: $textColor;
+			height: 1px;
+			width: 120px;
+			top: 53px;
+			left: -13px;
+			}
 	}
 }
 
 .explore{
 	a{
+		display: block;
+		padding: 15px 0px 0px 0px;
+		position: relative;
+		left: -24px;
 		font-size: 18px;
 		line-height: 24px;
 		font-weight: 700;
@@ -66,6 +96,7 @@
 		&:hover {
 			color: $textColor;
 			&:after {
+				position: absolute;
 				content:url("../img/arrow.png");
 				padding: 0 0 0 12px;
 			}
