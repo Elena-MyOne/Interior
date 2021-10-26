@@ -599,6 +599,28 @@ input:-ms-input-placeholder {
   background: url("../img/3/promo-2.png") center no-repeat;
 }
 
+.trending {
+  margin: 120px 0px 0px 0px;
+}
+
+.trending__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trending__column-title {
+  margin: 0px 0px 60px 0px;
+}
+
+.trending__column {
+  margin: 0px 0px 30px 0px;
+}
+
 /*
 .techniques {
 	&__row {
