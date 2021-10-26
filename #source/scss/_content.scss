@@ -289,6 +289,53 @@ margin: 120px 0px 0px 0px;
 }
 
 //block 6 - exclusive=========================================
+.exclusive {
+margin: 120px 0px 0px 0px;
+	&__body {
+	}
+	&__row {
+		@include flexbox();
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	&__column {
+		flex: 1 1 50%;
+	}
+	&__title {
+		color: $activeClr;
+		margin: 0px 0px 10px 0px;
+	}
+	&__text {
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 300;
+		color: $textContent;
+		margin: 10px 0px 0px 0px;
+		width: 333px;
+		height: 50px;
+		overflow: hidden;
+	}
+	&__row-inner {
+		@include flexbox();
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0px 0px 28px 0px;
+	}
+	&__column-inner {
+		flex: 1 1 50%;
+		padding: 0px 0px 0px 15px;
+	}
+}
+.exclusive--bg {
+	background: url("../img/6/exclusive_1.png") left no-repeat;
+	width: 570px;
+	height: 570px;
+	padding: 180px 30px 0px 30px;
+}
+.inner--1{
+	padding: 0px 0px 0px 20px;
+}
+
 
 
 //block 3===============================================
