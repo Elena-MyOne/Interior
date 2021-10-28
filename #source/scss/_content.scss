@@ -335,7 +335,44 @@ margin: 120px 0px 0px 0px;
 .inner--1{
 	padding: 0px 0px 0px 20px;
 }
-
+//block 7 - mobile=========================================
+.mobile {
+margin: 92px 0px 0px 0px;
+background: url("../img/7/1.png") center no-repeat;
+height: 516px;
+	&__body {
+		padding:  125px 0px 0px 0px;
+	}
+	&__title {
+		color: $textContent;
+	}
+	&__subtitle {
+		padding:  0px 610px 0px 0px;
+		height: 120px;
+		overflow: hidden;
+		margin: 10px 0px 0px 0px;
+	}
+	&__text {
+		margin: 20px 0px 0px 0px;
+		font-size: 22px;
+		line-height: 24px;
+		font-weight: 300;
+		color: $textContent;
+	}
+	&__btn {
+		margin: 30px 0px 0px 0px;
+		a{
+			display: inline-block;
+			margin: 0px 10px 0px 0px;
+		}
+	}
+}
+.container {
+}
+.title {
+}
+.subtitle {
+}
 
 
 //block 3===============================================

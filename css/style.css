@@ -716,6 +716,44 @@ input:-ms-input-placeholder {
   padding: 0px 0px 0px 20px;
 }
 
+.mobile {
+  margin: 92px 0px 0px 0px;
+  background: url("../img/7/1.png") center no-repeat;
+  height: 516px;
+}
+
+.mobile__body {
+  padding: 125px 0px 0px 0px;
+}
+
+.mobile__title {
+  color: #6c6c6c;
+}
+
+.mobile__subtitle {
+  padding: 0px 610px 0px 0px;
+  height: 120px;
+  overflow: hidden;
+  margin: 10px 0px 0px 0px;
+}
+
+.mobile__text {
+  margin: 20px 0px 0px 0px;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #6c6c6c;
+}
+
+.mobile__btn {
+  margin: 30px 0px 0px 0px;
+}
+
+.mobile__btn a {
+  display: inline-block;
+  margin: 0px 10px 0px 0px;
+}
+
 /*
 .techniques {
 	&__row {
