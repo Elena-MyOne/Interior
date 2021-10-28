@@ -169,25 +169,27 @@ nav{
 
 // search===============================================
 form {
-	position: relative;
-	height: 40px;
-}
-input {
-	height: 28px;
-	width: 0;
-	padding: 0px 28px 0px 15px;
-	border-bottom: 1px solid transparent;
-	outline: none;
-	background: transparent;
-	transition: .4s cubic-bezier(0, 0.8, 0, 1);
-	position: absolute;
-	top: 0;
-	right: 0;
-	z-index: 4;
-	@media (max-width: $md3+px){
-		width: 180px;
-		border-bottom: 1px solid #212121;
+	.form__search {
+		position: relative;
+		height: 50px;
 	}
+}
+input{
+		height: 28px;
+		width: 0;
+		padding: 0px 28px 0px 15px;
+		border-bottom: 1px solid transparent;
+		outline: none;
+		background: transparent;
+		transition: .4s cubic-bezier(0, 0.8, 0, 1);
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 4;
+		@media (max-width: $md3+px){
+			width: 180px;
+			border-bottom: 1px solid #212121;
+		}
 }
 input:focus {
 	width: 300px;
@@ -201,23 +203,25 @@ input:focus {
 }
 button {
 	border: none;
-	height: 23px;
+	height: 30px;
 	width: 23px;
 	position: absolute;
 	z-index: 3;
 	top: 0px;
 	right: 0;
 	cursor: pointer;
+	background-color: transparent;
 }
 button:before {
-	content: url("../img/header/search_224.png");
+	content: url("../img/header/search.svg");
 }
 input::-webkit-input-placeholder {
 	color: $textContent; 
 	font-style: italic; 
-	background: #ffffff;
+	background: #fff;
 	letter-spacing: 1.5px;
 	font-size: 14px;
+	padding: 5px 0px 0px 0px;
 	@media (max-width: $md3+px){
 		background-color: $burgerColor;
 	}
@@ -225,12 +229,12 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
 	color: $textContent; 
 	font-style: italic; 
-	background: #ffffff;
+	background: #fff;
 	letter-spacing: 1.5px;
 }
 input:-ms-input-placeholder {
 	color: $textContent; 
 	font-style: italic; 
-	background: #ffffff;
+	background: #fff;
 	letter-spacing: 1.5px;
 }

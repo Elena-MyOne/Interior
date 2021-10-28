@@ -207,9 +207,9 @@ nav {
   }
 }
 
-form {
+form .form__search {
   position: relative;
-  height: 40px;
+  height: 50px;
 }
 
 input {
@@ -250,25 +250,27 @@ input:focus {
 
 button {
   border: none;
-  height: 23px;
+  height: 30px;
   width: 23px;
   position: absolute;
   z-index: 3;
   top: 0px;
   right: 0;
   cursor: pointer;
+  background-color: transparent;
 }
 
 button:before {
-  content: url("../img/header/search_224.png");
+  content: url("../img/header/search.svg");
 }
 
 input::-webkit-input-placeholder {
   color: #6c6c6c;
   font-style: italic;
-  background: #ffffff;
+  background: #fff;
   letter-spacing: 1.5px;
   font-size: 14px;
+  padding: 5px 0px 0px 0px;
 }
 
 @media (max-width: 767.98px) {
@@ -280,14 +282,14 @@ input::-webkit-input-placeholder {
 input:-moz-placeholder {
   color: #6c6c6c;
   font-style: italic;
-  background: #ffffff;
+  background: #fff;
   letter-spacing: 1.5px;
 }
 
 input:-ms-input-placeholder {
   color: #6c6c6c;
   font-style: italic;
-  background: #ffffff;
+  background: #fff;
   letter-spacing: 1.5px;
 }
 
@@ -754,19 +756,6 @@ input:-ms-input-placeholder {
   margin: 0px 10px 0px 0px;
 }
 
-/*
-.techniques {
-	&__row {
-		@include flexbox();
-		font-size: 16px;
-		flex-wrap: wrap;
-		margin: 0px -10px;
-		justify-content: space-between;
-	}
-	&__column {
-		flex: 1 1 33.333%;
-		padding: 0px 10px;
-	}*/
 .title {
   font-size: 18px;
   font-weight: 700;
