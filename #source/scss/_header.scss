@@ -38,6 +38,12 @@ header{}
 .header__logo {
 	z-index: 3;
 	display: block;
+	@media (max-width: $md2+px){
+		img {
+			display: inline-block;
+			width: 90%;
+		}
+	}
 }
 .header__burger{
 	display: none;
