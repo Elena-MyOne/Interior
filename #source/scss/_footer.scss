@@ -1,54 +1,136 @@
 footer{
+	background-color: #f7f7f7;
+	width: 1366px;
+	height: 384px;
+	margin: 0 auto;
 	.footer {
-
-		&__body {
-		}
-
 		&__top {
+			padding: 115px 0px 0px 0px;
 		}
 
 		&__row {
+			@include flexbox();
+			justify-content: space-between;
 		}
 
-		&__column {
+		&__column-1 {
+			width: 250px !important;
+			margin: 0px 70px 0px 0px;
 		}
-
+		&__column-2 {
+			width: 524px !important;
+		}
+		&__column-3 {
+			width: 400px !important;
+		}
 		&__title {
+			font-size: 18px;
+			line-height: 24px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: $textContent;
+			margin: 0px 0px 15px 0px;
 		}
-
 		&__text {
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 20px;
+			color: $textColor;
+			p{
+				display: inline-block;
+			}
+			.text {
+				margin: 25px 0px 0px 0px;
+			}
 		}
-
+		&__item {
+			width: 235px;
+			float: left;
+		}
 		&__list {
+			a{
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 700;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+				color: $textColor;
+				&:hover {
+					color: $activeClr;
+				}
+				&:focus {
+					color: rgba(33, 33, 33, 0.5);
+				}
+			}
 		}
 
 		&__link {
 		}
-
-		&__btn {
-		}
-
 		&__buttom {
+			margin: 60px 0px 0px 0px;
 		}
 
 		&__column-buttom {
 		}
 
 		&__copy {
+			font-size: 12px;
+			line-height: 26px;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.03em;
+			color: $textContent;
+			a {
+			color: $textContent;
+			&:hover {
+				color: $activeClr;
+			}
+			}
 		}
 
 		&__social {
+			a{
+				margin: 0px 10px 0px 0px;
+				&:hover {
+					opacity: 0.5;
+				}
+			}
+			img{
+				height: 25px;
+			}
 		}
 	}
-	.form {
+}
 
-			&__body {
-			}
-
-			&__item {
-			}
-
-			&__input {
-			}
+.form {
+	&__body {
+		margin: 25px 0px 0px 0px;
+		position: relative;
+		height: 48px;
+		z-index: 3;
+	}
+	&__input {
+		height: 48px;
+		width: 370px;
+		border: 1px solid #d9dee1;
+		padding: 0px 0px 0px 20px;
+		&:focus{
+			border: 1px solid #6c6c6c;
+		}
+	}
+	&__btn-email {
+		height: 46px;
+		width: 46px;
+		position: absolute;
+		z-index: 4;
+		top: 1px;
+		right: 2px;
+		cursor: pointer;
+		background-color: #fff;
+		background: #fff url("../img/footer/1.png") center no-repeat;
+		&:hover{
+			opacity: 0.8;
+		}
 	}
 }
