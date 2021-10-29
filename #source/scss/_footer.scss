@@ -56,8 +56,10 @@ footer{
 				text-transform: uppercase;
 				letter-spacing: 0.05em;
 				color: $textColor;
+				transition: all 0.5s ease 0s;
 				&:hover {
 					color: $activeClr;
+					transition: all 0.5s ease 0s;
 				}
 				&:focus {
 					color: rgba(33, 33, 33, 0.5);
@@ -83,8 +85,10 @@ footer{
 			color: $textContent;
 			a {
 			color: $textContent;
+			transition: all 0.5s ease 0s;
 			&:hover {
 				color: $activeClr;
+				transition: all 0.5s ease 0s;
 			}
 			}
 		}
@@ -92,8 +96,10 @@ footer{
 		&__social {
 			a{
 				margin: 0px 10px 0px 0px;
+				transition: all 0.5s ease 0s;
 				&:hover {
 					opacity: 0.5;
+					transition: all 0.5s ease 0s;
 				}
 			}
 			img{
@@ -115,8 +121,10 @@ footer{
 		width: 370px;
 		border: 1px solid #d9dee1;
 		padding: 0px 0px 0px 20px;
+		transition: all 0.5s ease 0s;
 		&:focus{
 			border: 1px solid #6c6c6c;
+			transition: all 0.5s ease 0s;
 		}
 	}
 	&__btn-email {
@@ -129,8 +137,10 @@ footer{
 		cursor: pointer;
 		background-color: #fff;
 		background: #fff url("../img/footer/1.png") center no-repeat;
+		transition: all 0.5s ease 0s;
 		&:hover{
 			opacity: 0.8;
+			transition: all 0.5s ease 0s;
 		}
 	}
 }
