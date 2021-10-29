@@ -24,20 +24,41 @@ body{
 	background: url("../img/1/slider_img_201.jpg") center no-repeat;
 	height: 800px;
 	width: 100%;
+	@media (max-width: $md2+px){
+		height: 700px;
+	}
+	@media (max-width: $md3+px){
+		height: 550px;
+	}
+	@media (max-width: $md4+px){
+		height: 590px;
+	}
 	&__body {
 	}
 	&__title {
 		padding: 370px 0px 0px 0px;
 		color: $titleClr;
 		font-weight: 700;
+		@media (max-width: $md2+px){
+			padding: 250px 0px 0px 0px;
+		}
+		@media (max-width: $md3+px){
+			padding: 150px 0px 0px 0px;
+		}
 	}
 	&__subtitle {
 		padding: 10px 0px 0px 0px;
+		@media (max-width: $md3+px){
+			padding:  30px 0px 0px 0px;
+		}
 	}
 
 	&__text {
 		padding:  15px 0px 0px 0px;
 		width: 500px;
+		@media (max-width: $md4+px){
+			width: 250px;
+		}
 	}
 
 	&__btn {
@@ -49,6 +70,9 @@ body{
 		align-items: center;
 		justify-content: center;
 		padding: 140px 0px 0px 0px;
+		@media (max-width: $md4+px){
+			padding: 90px 0px 0px 0px;
+		}
 	}
 }
 .slide-1 {
@@ -57,6 +81,10 @@ body{
 	opacity: 0.2;
 	background-color: rgba(33, 33, 33, 0.5);
 	border-radius: 20px;
+	@media (max-width: $md3+px){
+		width: 20px;
+		height: 20px;
+	}
 }
 .slide-2 {
 	width: 40px;
@@ -64,6 +92,10 @@ body{
 	background-color: #212121;
 	border-radius: 20px;
 	margin: 0px 10px 0px 10px;
+	@media (max-width: $md3+px){
+		width: 30px;
+		height: 30px;
+	}
 }
 
 //block 2 - featured ===================================

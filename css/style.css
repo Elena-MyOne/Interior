@@ -322,19 +322,61 @@ nav {
   width: 100%;
 }
 
+@media (max-width: 992.98px) {
+  .slider {
+    height: 700px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .slider {
+    height: 550px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .slider {
+    height: 590px;
+  }
+}
+
 .slider__title {
   padding: 370px 0px 0px 0px;
   color: #43a047;
   font-weight: 700;
 }
 
+@media (max-width: 992.98px) {
+  .slider__title {
+    padding: 250px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .slider__title {
+    padding: 150px 0px 0px 0px;
+  }
+}
+
 .slider__subtitle {
   padding: 10px 0px 0px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .slider__subtitle {
+    padding: 30px 0px 0px 0px;
+  }
 }
 
 .slider__text {
   padding: 15px 0px 0px 0px;
   width: 500px;
+}
+
+@media (max-width: 479.98px) {
+  .slider__text {
+    width: 250px;
+  }
 }
 
 .slider__btn {
@@ -355,6 +397,12 @@ nav {
   padding: 140px 0px 0px 0px;
 }
 
+@media (max-width: 479.98px) {
+  .slider__slides {
+    padding: 90px 0px 0px 0px;
+  }
+}
+
 .slide-1 {
   width: 30px;
   height: 30px;
@@ -363,12 +411,26 @@ nav {
   border-radius: 20px;
 }
 
+@media (max-width: 767.98px) {
+  .slide-1 {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .slide-2 {
   width: 40px;
   height: 40px;
   background-color: #212121;
   border-radius: 20px;
   margin: 0px 10px 0px 10px;
+}
+
+@media (max-width: 767.98px) {
+  .slide-2 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .featured {
@@ -953,11 +1015,23 @@ footer .footer__social img {
   color: #212121;
 }
 
+@media (max-width: 767.98px) {
+  .subtitle {
+    font-size: 30px;
+  }
+}
+
 .text {
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: #6c6c6c;
+}
+
+@media (max-width: 767.98px) {
+  .text {
+    line-height: 22px;
+  }
 }
 
 .btn {
@@ -967,6 +1041,12 @@ footer .footer__social img {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
           box-shadow: 0px 2px 5px 0px rgba(33, 33, 33, 0.34);
   border-radius: 22.5px;
+}
+
+@media (max-width: 767.98px) {
+  .btn {
+    width: 150px;
+  }
 }
 
 .btn a {
@@ -987,6 +1067,19 @@ footer .footer__social img {
   padding: 0 0 0 22px;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+
+@media (max-width: 767.98px) {
+  .btn a:hover:after {
+    padding: 0px 0px 0px 5px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .btn a {
+    font-size: 14px;
+    padding: 10px 0px 0px 22px;
+  }
 }
 
 .block__title {
