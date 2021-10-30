@@ -497,7 +497,7 @@ nav {
   margin: 0px 26px 0px 0px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 992.98px) {
   .featured .item__1 {
     width: 170px;
     height: 170px;
@@ -527,7 +527,7 @@ nav {
   cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 992.98px) {
   .featured .item__1 .item__content {
     width: 170px;
     height: 170px;
@@ -557,7 +557,7 @@ nav {
   margin: 0px 26px 0px 0px;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 992.98px) {
   .featured .item__2 {
     width: 170px;
     height: 170px;
@@ -587,7 +587,7 @@ nav {
   cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 992.98px) {
   .featured .item__2 .item__content {
     width: 170px;
     height: 170px;
@@ -619,23 +619,15 @@ nav {
 
 @media (max-width: 992.98px) {
   .featured .item__3 {
-    margin: 26px 26px 0px 0px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .featured .item__3 {
     width: 170px;
     height: 170px;
     background: url("../img/2/product_3.png") 0 0/170px 170px no-repeat;
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 610px) {
   .featured .item__3 {
-    width: 120px;
-    height: 120px;
-    background: url("../img/2/product_3.png") 0 0/120px 120px no-repeat;
+    display: none;
   }
 }
 
@@ -653,17 +645,16 @@ nav {
   cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 992.98px) {
   .featured .item__3 .item__content {
     width: 170px;
     height: 170px;
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 610px) {
   .featured .item__3 .item__content {
-    width: 120px;
-    height: 120px;
+    display: none;
   }
 }
 
@@ -682,25 +673,9 @@ nav {
   transition: all 0.8s ease 0s;
 }
 
-@media (max-width: 992.98px) {
+@media (max-width: 1160px) {
   .featured .item__4 {
-    margin: 26px 0px 0px 0px;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .featured .item__4 {
-    width: 170px;
-    height: 170px;
-    background: url("../img/2/product_4.png") 0 0/170px 170px no-repeat;
-  }
-}
-
-@media (max-width: 479.98px) {
-  .featured .item__4 {
-    width: 120px;
-    height: 120px;
-    background: url("../img/2/product_4.png") 0 0/120px 120px no-repeat;
+    display: none;
   }
 }
 
@@ -718,17 +693,9 @@ nav {
   cursor: pointer;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1160px) {
   .featured .item__4 .item__content {
-    width: 170px;
-    height: 170px;
-  }
-}
-
-@media (max-width: 479.98px) {
-  .featured .item__4 .item__content {
-    width: 120px;
-    height: 120px;
+    display: none;
   }
 }
 
@@ -817,9 +784,21 @@ nav {
   margin: 120px 0px 0px 0px;
 }
 
+@media (max-width: 767.98px) {
+  .promo {
+    margin: 60px 0px 0px 0px;
+  }
+}
+
 .promo__body {
   margin: 0 auto;
   width: 1366px;
+}
+
+@media (max-width: 1370px) {
+  .promo__body {
+    width: 100%;
+  }
 }
 
 .promo__row {
@@ -840,6 +819,27 @@ nav {
   padding: 228px 50px 0px 50px;
 }
 
+@media (max-width: 992.98px) {
+  .promo__column {
+    padding: 150px 50px 0px 50px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: 100px 40px 0px 40px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .promo__column {
+    padding: 80px 10px 0px 10px;
+  }
+}
+
 .promo__title {
   color: #1e88e5;
 }
@@ -854,16 +854,52 @@ nav {
   margin: 0px 200px 0px 0px;
 }
 
+@media (max-width: 1370px) {
+  .promo__text {
+    margin: 0px 100px 0px 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .promo__text {
+    margin: 0px 40px 0px 0px;
+  }
+}
+
 .promo__btn {
   margin: 25px 0px 0px 0px;
+}
+
+@media (max-width: 479.98px) {
+  .promo__btn {
+    margin: 15px 0px 0px 0px;
+  }
 }
 
 .promo--1 {
   background: url("../img/3/promo-1.png") center no-repeat;
 }
 
+@media (max-width: 1370px) {
+  .promo--1 {
+    background: url("../img/3/promo-1.png") 0 0/contain no-repeat;
+  }
+}
+
 .promo--2 {
   background: url("../img/3/promo-2.png") center no-repeat;
+}
+
+@media (max-width: 1370px) {
+  .promo--2 {
+    background: url("../img/3/promo-2.png") 0 0/contain no-repeat;
+  }
+}
+
+@media (max-width: 660px) {
+  .promo--2 {
+    display: none;
+  }
 }
 
 .trending {
