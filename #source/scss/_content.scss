@@ -71,7 +71,7 @@ body{
 		justify-content: center;
 		padding: 140px 0px 0px 0px;
 		@media (max-width: $md4+px){
-			padding: 90px 0px 0px 0px;
+			padding: 100px 0px 0px 0px;
 		}
 	}
 }
@@ -101,6 +101,9 @@ body{
 //block 2 - featured ===================================
 .featured {
 	margin: 122px 0px 0px 0px;
+	@media (max-width: $md3+px){
+		margin: 40px 0px 0px 0px;
+	}
 	&__row {
 		@include flexbox();
 		justify-content: space-between;
@@ -115,6 +118,9 @@ body{
 		padding: 60px 0px 0px 0px;
 		@include flexbox();
 		flex-wrap: wrap;
+		@media (max-width: $md2+px){
+			padding:  50px 0px 0px 0px;
+		}
 	}
 	.item {
 		&__1 {
@@ -124,6 +130,16 @@ body{
 			position: relative;
 			transition: all 0.8s ease 0s;
 			margin: 0px 26px 0px 0px;
+			@media (max-width: $md3+px){
+				width: 170px;
+				height: 170px;
+				background: url("../img/2/product_1.png") 0 0/170px 170px no-repeat;
+			}
+			@media (max-width: $md4+px){
+				width: 120px;
+				height: 120px;
+				background: url("../img/2/product_1.png") 0 0/120px 120px no-repeat;
+			}
 			.item__content {
 				background: rgba(255, 255, 255, 0.9);
 				width: 270px;
@@ -136,6 +152,14 @@ body{
 				outline: 1px solid #9c9c9c;
 				display: none;
 				cursor: pointer;
+				@media (max-width: $md3+px){
+					width: 170px;
+					height: 170px;
+				}
+				@media (max-width: $md4+px){
+					width: 120px;
+					height: 120px;
+				}
 			}
 		}
 		.item__1:hover .item__content {
@@ -149,6 +173,16 @@ body{
 			position: relative;
 			transition: all 0.8s ease 0s;
 			margin: 0px 26px 0px 0px;
+			@media (max-width: $md3+px){
+				width: 170px;
+				height: 170px;
+				background: url("../img/2/product_2.png") 0 0/170px 170px no-repeat;
+			}
+			@media (max-width: $md4+px){
+				width: 120px;
+				height: 120px;
+				background: url("../img/2/product_2.png") 0 0/120px 120px no-repeat;
+			}
 			.item__content {
 				background: rgba(255, 255, 255, 0.9);
 				width: 270px;
@@ -161,6 +195,14 @@ body{
 				outline: 1px solid #9c9c9c;
 				display: none;
 				cursor: pointer;
+				@media (max-width: $md3+px){
+					width: 170px;
+					height: 170px;
+				}
+				@media (max-width: $md4+px){
+					width: 120px;
+					height: 120px;
+				}
 			}
 		}
 		.item__2:hover .item__content {
@@ -174,6 +216,19 @@ body{
 			position: relative;
 			transition: all 0.8s ease 0s;
 			margin: 0px 26px 0px 0px;
+			@media (max-width: $md2+px){
+				margin: 26px 26px 0px 0px;
+			}
+			@media (max-width: $md3+px){
+				width: 170px;
+				height: 170px;
+				background: url("../img/2/product_3.png") 0 0/170px 170px no-repeat;
+			}
+			@media (max-width: $md4+px){
+				width: 120px;
+				height: 120px;
+				background: url("../img/2/product_3.png") 0 0/120px 120px no-repeat;
+			}
 			.item__content {
 				background: rgba(255, 255, 255, 0.9);
 				width: 270px;
@@ -186,6 +241,14 @@ body{
 				outline: 1px solid #9c9c9c;
 				display: none;
 				cursor: pointer;
+				@media (max-width: $md3+px){
+					width: 170px;
+					height: 170px;
+				}
+				@media (max-width: $md4+px){
+					width: 120px;
+					height: 120px;
+				}
 			}
 		}
 		.item__3:hover .item__content {
@@ -198,6 +261,19 @@ body{
 			height: 270px;
 			position: relative;
 			transition: all 0.8s ease 0s;
+			@media (max-width: $md2+px){
+				margin: 26px 0px 0px 0px;
+			}
+			@media (max-width: $md3+px){
+				width: 170px;
+				height: 170px;
+				background: url("../img/2/product_4.png") 0 0/170px 170px no-repeat;
+			}
+			@media (max-width: $md4+px){
+				width: 120px;
+				height: 120px;
+				background: url("../img/2/product_4.png") 0 0/120px 120px no-repeat;
+			}
 			.item__content {
 				background: rgba(255, 255, 255, 0.9);
 				width: 270px;
@@ -210,6 +286,14 @@ body{
 				outline: 1px solid #9c9c9c;
 				display: none;
 				cursor: pointer;
+				@media (max-width: $md3+px){
+					width: 170px;
+					height: 170px;
+				}
+				@media (max-width: $md4+px){
+					width: 120px;
+					height: 120px;
+				}
 			}
 		}
 		.item__4:hover .item__content {
@@ -225,6 +309,16 @@ body{
 				border-radius: 24px;
 				background: url("../img/arrow.png") center no-repeat;
 				margin: 62px 0px 0px 110px;
+				@media (max-width: $md3+px){
+					width: 35px;
+					height: 35px;
+					margin: 30px 0px 0px 70px;
+				}
+				@media (max-width: $md4+px){
+					width: 35px;
+					height: 35px;
+					margin: 20px 0px 0px 40px;
+				}
 			}
 			&__title {
 				font-size: 22px;
@@ -232,6 +326,16 @@ body{
 				font-weight: 700;
 				color: $textColor;
 				margin: 15px 0px 0px 60px;
+				@media (max-width: $md3+px){
+					font-size: 18px;
+					line-height: 22px;
+					margin: 10px 0px 0px 20px;
+				}
+				@media (max-width: $md4+px){
+					font-size: 14px;
+					line-height: 20px;
+					margin: 20px 0px 0px 10px;
+				}
 			}
 			&__text {
 				font-size: 14px;
@@ -241,6 +345,14 @@ body{
 				margin: 23px 28px 0px 28px;
 				height: 40px;
 				overflow: hidden;
+				@media (max-width: $md3+px){
+					margin: 10px 10px 0px 10px;
+					line-height: 15px;
+					height: 45px;
+				}
+				@media (max-width: $md4+px){
+					display: none;
+				}
 			}
 		}
 	}

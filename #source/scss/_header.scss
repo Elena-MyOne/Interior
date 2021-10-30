@@ -24,6 +24,9 @@ header{}
 	height: 100%;
 	background-color: transparent;
 	z-index: 2;
+	@media (max-width: $md3+px){
+		background-color: #fff;
+	}
 }
 .header__body {
 	position: relative;
