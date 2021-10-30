@@ -815,13 +815,12 @@ nav {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  height: 683px;
-  padding: 228px 50px 0px 50px;
+  padding: 228px 50px 100px 50px;
 }
 
 @media (max-width: 992.98px) {
   .promo__column {
-    padding: 150px 50px 0px 50px;
+    padding: 150px 50px 100px 50px;
   }
 }
 
@@ -830,13 +829,13 @@ nav {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
             flex: 1 1 auto;
-    padding: 100px 40px 0px 40px;
+    padding: 90px 40px 100px 40px;
   }
 }
 
 @media (max-width: 479.98px) {
   .promo__column {
-    padding: 80px 10px 0px 10px;
+    padding: 80px 10px 80px 10px;
   }
 }
 
@@ -867,36 +866,42 @@ nav {
 }
 
 .promo__btn {
-  margin: 25px 0px 0px 0px;
+  margin: 25px 0px 90px 0px;
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 1150px) {
   .promo__btn {
-    margin: 15px 0px 0px 0px;
+    margin: 25px 0px 0px 0px;
   }
 }
 
 .promo--1 {
-  background: url("../img/3/promo-1.png") center no-repeat;
+  background: url("../img/3/promo-1.png") right no-repeat;
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1250px) {
   .promo--1 {
-    background: url("../img/3/promo-1.png") 0 0/contain no-repeat;
+    background: url("../img/3/promo-1.png") right/contain no-repeat;
+  }
+}
+
+@media (max-width: 683px) {
+  .promo--1 {
+    background: url("../img/3/promo-1.png") 0 0/100% auto no-repeat;
   }
 }
 
 .promo--2 {
-  background: url("../img/3/promo-2.png") center no-repeat;
+  background: url("../img/3/promo-2.png") left no-repeat;
 }
 
-@media (max-width: 1370px) {
+@media (max-width: 1250px) {
   .promo--2 {
-    background: url("../img/3/promo-2.png") 0 0/contain no-repeat;
+    background: url("../img/3/promo-2.png") left/contain no-repeat;
   }
 }
 
-@media (max-width: 660px) {
+@media (max-width: 683px) {
   .promo--2 {
     display: none;
   }
@@ -1335,7 +1340,7 @@ footer .footer__social img {
 
 @media (max-width: 479.98px) {
   .block__title {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -1380,7 +1385,7 @@ footer .footer__social img {
 
 @media (max-width: 479.98px) {
   .block__title .underline-bold::after {
-    width: 110px;
+    width: 90px;
     top: 30px;
   }
 }
@@ -1446,9 +1451,14 @@ footer .footer__social img {
 
 @media (max-width: 479.98px) {
   .explore a {
-    line-height: 22px;
+    padding: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .explore a {
     letter-spacing: 0.05em;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 

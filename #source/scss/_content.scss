@@ -355,17 +355,16 @@ margin: 120px 0px 0px 0px;
 	}
 	&__column {
 		flex: 1 1 50%;
-		height: 683px;
-		padding: 228px 50px 0px 50px;
+		padding: 228px 50px 100px 50px;
 		@media (max-width: $md2+px){
-			padding: 150px 50px 0px 50px;
+			padding: 150px 50px 100px 50px;
 		}
 		@media (max-width: $md3+px){
 			flex: 1 1 auto;
-			padding: 100px 40px 0px 40px;
+			padding: 90px 40px 100px 40px;
 		}
 		@media (max-width: $md4+px){
-			padding: 80px 10px 0px 10px;
+			padding: 80px 10px 80px 10px;
 		}
 	}
 	&__title {
@@ -386,24 +385,27 @@ margin: 120px 0px 0px 0px;
 		}
 	}
 	&__btn {
-		margin: 25px 0px 0px 0px;
-		@media (max-width: $md4+px){
-			margin: 15px 0px 0px 0px;
+		margin: 25px 0px 90px 0px;
+		@media (max-width: 1150px){
+			margin: 25px 0px 0px 0px;
 		}
 	}
 }
 .promo--1 {
-	background: url("../img/3/promo-1.png") center no-repeat;
-	@media (max-width: 1370px){
-		background: url("../img/3/promo-1.png")  0 0/contain no-repeat;
+	background: url("../img/3/promo-1.png") right no-repeat;
+	@media (max-width: 1250px){
+		background: url("../img/3/promo-1.png") right/contain no-repeat;
+	}
+	@media (max-width: 683px){
+		background: url("../img/3/promo-1.png") 0 0/100% auto no-repeat;
 	}
 }
 .promo--2 {
-	background: url("../img/3/promo-2.png") center no-repeat;
-	@media (max-width: 1370px){
-		background: url("../img/3/promo-2.png")  0 0/contain no-repeat;
+	background: url("../img/3/promo-2.png") left no-repeat;
+	@media (max-width: 1250px){
+		background: url("../img/3/promo-2.png")  left/contain no-repeat;
 	}
-	@media (max-width: 660px){
+	@media (max-width: 683px){
 		display: none;
 	}
 }
