@@ -57,7 +57,7 @@ body{
 		padding:  15px 0px 0px 0px;
 		width: 500px;
 		@media (max-width: $md4+px){
-			width: 250px;
+			width: 300px;
 		}
 	}
 
@@ -414,36 +414,62 @@ margin: 120px 0px 0px 0px;
 
 .trending {
 	margin: 120px 0px 0px 0px;
+	@media (max-width: $md3+px){
+		margin: 40px 0px 0px 0px;
+	}
+
 	&__row {
 		@include flexbox();
 		justify-content: space-between;
 	}
 	&__column-title {
 		margin: 0px 0px 60px 0px;
+		@media (max-width: $md3+px){
+			margin: 0px 0px 20px 0px;
+		}
 	}
 	&__column {
 		margin: 0px 0px 30px 0px;
+		img {
+			width: 100%;
+		}
 	}
 }
 
 //block 5 - hot=========================================
 .hot {
-	margin: 120px 0px 0px 0px;
+	margin: 90px 0px 0px 0px;
 	background: url("../img/5/slider_hot.png") center no-repeat;
-	height: 800px;
 	width: 100%;
-	&__body {
+	@media (max-width: $md3+px){
+		margin: 20px 0px 0px 0px;
+		background: url("../img/5/slider_hot.png") 0 0/auto 457px no-repeat;
 	}
-
+	@media (max-width: $md4+px){
+		margin: 20px 0px 0px 0px;
+		background: url("../img/5/slider_hot.png") 0 0/auto 396px no-repeat;
+	}
 	&__title {
 		padding: 287px 0px 0px 0px;
 		color: $dealClr;
+		@media (max-width: $md3+px){
+			padding: 95px 0px 0px 0px;
+		}
+		@media (max-width: $md4+px){
+			padding: 20px 0px 0px 0px;
+		}
 	}
 	&__slides {
 		@include flexbox();
 		align-items: center;
 		justify-content: center;
-		padding: 225px 0px 0px 0px;
+		padding: 225px 0px 20px 0px;
+		@media (max-width: $md3+px){
+			padding: 100px 0px 20px 0px;
+		}
+		@media (max-width: $md4+px){
+			padding: 80px 0px 20px 0px;
+		}
 	}
 }
 
