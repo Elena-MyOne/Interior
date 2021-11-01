@@ -71,7 +71,7 @@ body{
 		justify-content: center;
 		padding: 140px 0px 0px 0px;
 		@media (max-width: $md4+px){
-			padding: 100px 0px 0px 0px;
+			padding: 135px 0px 0px 0px;
 		}
 	}
 }
@@ -468,7 +468,7 @@ margin: 120px 0px 0px 0px;
 			padding: 100px 0px 20px 0px;
 		}
 		@media (max-width: $md4+px){
-			padding: 80px 0px 20px 0px;
+			padding: 70px 0px 20px 0px;
 		}
 	}
 }
@@ -476,8 +476,9 @@ margin: 120px 0px 0px 0px;
 //block 6 - exclusive=========================================
 .exclusive {
 margin: 120px 0px 0px 0px;
-	&__body {
-	}
+@media (max-width: $md3+px){
+	margin: 40px 0px 0px 0px;
+}
 	&__row {
 		@include flexbox();
 		justify-content: space-between;
@@ -499,27 +500,47 @@ margin: 120px 0px 0px 0px;
 		width: 333px;
 		height: 50px;
 		overflow: hidden;
+		@media (max-width: $md4+px){
+			width: 200px;
+		}
 	}
 	&__row-inner {
 		@include flexbox();
 		justify-content: space-between;
 		flex-wrap: wrap;
-		margin: 0px 0px 28px 0px;
+		margin: 0px 0px 0px 0px;
 	}
 	&__column-inner {
 		flex: 1 1 50%;
-		padding: 0px 0px 0px 15px;
+		padding: 0px 0px 0px 20px;
+		img {
+			width: 100%;
+		}
 	}
 }
 .exclusive--bg {
-	background: url("../img/6/exclusive_1.png") left no-repeat;
-	width: 570px;
-	height: 570px;
+	background: url("../img/6/exclusive_1.png") left / auto no-repeat;
 	padding: 180px 30px 0px 30px;
+	@media (max-width: $md2+px){
+		background: url("../img/6/exclusive_1.png") 0 0 /100% auto no-repeat;
+		padding: 150px 30px 120px 30px;
+	}
+	@media (max-width: $md3+px){
+		padding: 100px 20px 100px 20px;
+	}
+	@media (max-width: $md4+px){
+		padding: 70px 10px 70px 10px;
+	}
 }
 .inner--1{
-	padding: 0px 0px 0px 20px;
+	padding: 0px 0px 20px 20px;
 }
+.exclusive--img {
+	@media (max-width: $md2+px){
+		display: none;
+	}
+}
+
 //block 7 - mobile=========================================
 .mobile {
 margin: 92px 0px 0px 0px;
