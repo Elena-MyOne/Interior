@@ -477,7 +477,7 @@ margin: 120px 0px 0px 0px;
 .exclusive {
 margin: 120px 0px 0px 0px;
 @media (max-width: $md3+px){
-	margin: 40px 0px 0px 0px;
+	margin: 60px 0px 0px 0px;
 }
 	&__row {
 		@include flexbox();
@@ -546,8 +546,18 @@ margin: 120px 0px 0px 0px;
 margin: 92px 0px 0px 0px;
 background: url("../img/7/1.png") center no-repeat;
 height: 516px;
+@media (max-width: $md3+px){
+	margin: 60px 0px 0px 0px;
+	height: 416px;
+}
 	&__body {
 		padding:  120px 0px 0px 0px;
+		@media (max-width: $md3+px){
+			padding:  100px 0px 0px 0px;
+		}
+		@media (max-width: $md4+px){
+			padding:  60px 0px 0px 0px;
+		}
 	}
 	&__title {
 		color: $textContent;
@@ -556,7 +566,13 @@ height: 516px;
 		padding:  0px 610px 0px 0px;
 		height: 120px;
 		overflow: hidden;
-		margin: 10px 0px 0px 0px;
+		margin: 20px 0px 0px 0px;
+		@media (max-width: $md2+px){
+			padding:  0px 160px 0px 0px;
+		}
+		@media (max-width: $md3+px){
+			padding:  0px 60px 0px 0px;
+		}
 	}
 	&__text {
 		margin: 30px 0px 0px 0px;
@@ -564,6 +580,10 @@ height: 516px;
 		line-height: 24px;
 		font-weight: 300;
 		color: $textContent;
+		@media (max-width: $md3+px){
+			margin: 20px 75px 0px 0px;
+			font-size: 16px;
+		}
 	}
 	&__btn {
 		margin: 30px 0px 0px 0px;
