@@ -1,27 +1,47 @@
 footer{
 	background-color: #f7f7f7;
-	width: 1366px;
-	height: 384px;
 	margin: 0 auto;
 	.footer {
 		&__top {
 			padding: 115px 0px 0px 0px;
+			@media (max-width: $md2+px){
+				padding: 40px 0px 0px 0px;
+			}
 		}
-
 		&__row {
 			@include flexbox();
 			justify-content: space-between;
+			@media (max-width: $md2+px){
+				flex-direction: column;
+			}
 		}
-
+		&__row-buttom {
+			@include flexbox();
+			justify-content: space-between;
+			@media (max-width: $md3+px){
+				flex-direction: column;
+				align-items: center;
+			}
+		}
 		&__column-1 {
 			width: 250px !important;
 			margin: 0px 70px 0px 0px;
+			@media (max-width: $md2+px){
+				width: 100% !important;
+				margin: 0px 0px 0px 0px;
+			}
 		}
 		&__column-2 {
 			width: 524px !important;
+			@media (max-width: $md2+px){
+				width: 100% !important;
+			}
 		}
 		&__column-3 {
 			width: 400px !important;
+			@media (max-width: $md4+px){
+				width: 310px !important;
+			}
 		}
 		&__title {
 			font-size: 18px;
@@ -30,7 +50,7 @@ footer{
 			text-transform: uppercase;
 			letter-spacing: 1px;
 			color: $textContent;
-			margin: 0px 0px 15px 0px;
+			margin: 20px 0px 15px 0px;
 		}
 		&__text {
 			font-size: 14px;
@@ -42,6 +62,9 @@ footer{
 			}
 			.text {
 				margin: 25px 0px 0px 0px;
+				@media (max-width: $md2+px){
+					margin: 0px 0px 20px 0px;
+				}
 			}
 		}
 		&__item {
@@ -49,6 +72,9 @@ footer{
 			float: left;
 		}
 		&__list {
+			@media (max-width: $md2+px){
+				margin: 0px 0px 20px 0px;
+			}
 			a{
 				font-size: 14px;
 				line-height: 24px;
@@ -66,16 +92,21 @@ footer{
 				}
 			}
 		}
-
 		&__link {
 		}
 		&__buttom {
 			margin: 60px 0px 0px 0px;
+			padding:  0px 0px 30px 0px;
+			@media (max-width: $md3+px){
+				padding: 5px 0px 0px 0px;
+			}
 		}
-
 		&__column-buttom {
+			flex: 1 1 33.333%;
+			@media (max-width: $md3+px){
+				padding:  0px 0px 15px 0px;
+			}
 		}
-
 		&__copy {
 			font-size: 12px;
 			line-height: 26px;
@@ -83,6 +114,12 @@ footer{
 			text-transform: uppercase;
 			letter-spacing: 0.03em;
 			color: $textContent;
+			@media (max-width: $md2+px){
+				line-height: 15px;
+			}
+			@media (max-width: $md4+px){
+				font-size: 10px;
+			}
 			a {
 			color: $textContent;
 			transition: all 0.5s ease 0s;
@@ -92,13 +129,21 @@ footer{
 			}
 			}
 		}
-
 		&__social {
+			margin: 0px 0px 0px 120px;
+			@media (max-width: $md2+px){
+				margin: 0px 0px 0px 50px;
+			}
+			@media (max-width: $md4+px){
+				margin: 0px 0px 0px 0px;
+			}
 			a{
+				display: inline-block;
 				margin: 0px 10px 0px 0px;
+				opacity: 0.6;
 				transition: all 0.5s ease 0s;
 				&:hover {
-					opacity: 0.5;
+					opacity: 0.45;
 					transition: all 0.5s ease 0s;
 				}
 			}
@@ -108,7 +153,21 @@ footer{
 		}
 	}
 }
-
+.buttom--1 {
+	@media (max-width: $md3+px){
+		order: 2;
+	}
+}
+.buttom--2 {
+	@media (max-width: $md3+px){
+		order: 1;
+	}
+}
+.buttom--3 {
+	@media (max-width: $md3+px){
+		order: 3;
+	}
+}
 .form {
 	&__body {
 		margin: 25px 0px 0px 0px;
@@ -122,6 +181,9 @@ footer{
 		border: 1px solid #d9dee1;
 		padding: 0px 0px 0px 20px;
 		transition: all 0.5s ease 0s;
+		@media (max-width: $md4+px){
+			width: 300px;
+		}
 		&:focus{
 			border: 1px solid #6c6c6c;
 			transition: all 0.5s ease 0s;
@@ -138,6 +200,12 @@ footer{
 		background-color: #fff;
 		background: #fff url("../img/footer/1.png") center no-repeat;
 		transition: all 0.5s ease 0s;
+		@media (max-width: $md2+px){
+			right: 32px;
+		}
+		@media (max-width: $md4+px){
+			right: 12px;
+		}
 		&:hover{
 			opacity: 0.8;
 			transition: all 0.5s ease 0s;
