@@ -7,6 +7,9 @@ $md3:767.98;
 $md4:479.98;
 //=============================================================
 header{}
+.changeBgc {
+	background-color: #fff;
+}
 //=============================================================
 .header {
 	position: fixed;
@@ -169,10 +172,12 @@ header{}
 nav{
 	padding: 28px 0px 0px 0px;
 }
-.wrapper header{
+.wrapper .marginHeader {
 	margin: 40px 0px 0px 0px;
+	transition: all 0.4s ease 0s;
 	@media (max-width: $md3+px){
 		margin: 0px 0px 0px 0px;
+		transition: all 0.4s ease 0s;
 	}
 }
 

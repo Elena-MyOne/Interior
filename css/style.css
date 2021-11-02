@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap");
+.changeBgc {
+  background-color: #fff;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -210,13 +214,17 @@ nav {
   padding: 28px 0px 0px 0px;
 }
 
-.wrapper header {
+.wrapper .marginHeader {
   margin: 40px 0px 0px 0px;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 @media (max-width: 767.98px) {
-  .wrapper header {
+  .wrapper .marginHeader {
     margin: 0px 0px 0px 0px;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
   }
 }
 
