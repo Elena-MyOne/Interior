@@ -1780,6 +1780,52 @@ footer .footer__social img {
   }
 }
 
+.pages-title {
+  font-size: 62px;
+  line-height: 72px;
+  font-weight: 100;
+  color: #212121;
+}
+
+@media (max-width: 767.98px) {
+  .pages-title {
+    font-size: 32px;
+  }
+}
+
+.contact {
+  height: 360px;
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 767.98px) {
+  .contact {
+    height: 200px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .contact {
+    height: 140px;
+  }
+}
+
+.contact__title {
+  padding: 240px 0px 0px 0px;
+}
+
+@media (max-width: 767.98px) {
+  .contact__title {
+    padding: 100px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .contact__title {
+    padding: 60px 0px 0px 0px;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;

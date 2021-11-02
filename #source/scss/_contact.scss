@@ -1,0 +1,22 @@
+.contact {
+height: 360px;
+background-color: $pageTitleBgc;
+@media (max-width: $md3+px){
+	height: 200px;
+}
+@media (max-width: $md4+px){
+	height: 140px;
+}
+	&__body {
+	}
+
+	&__title {
+		padding:  240px 0px 0px 0px;
+		@media (max-width: $md3+px){
+			padding:  100px 0px 0px 0px;
+		}
+		@media (max-width: $md4+px){
+			padding:  60px 0px 0px 0px;
+		}
+	}
+}

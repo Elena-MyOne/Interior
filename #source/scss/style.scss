@@ -21,6 +21,8 @@ $titleClr: #43a047;
 $dealClr: #e53935;
 $footerClr: #f7f7f7;
 
+$pageTitleBgc: #f5f5f5;
+
 
 
 //scss================================================================================
@@ -28,6 +30,7 @@ $footerClr: #f7f7f7;
 @import "_content";
 @import "_footer";
 @import "_generic";
+@import "_contact";
 
 
 *{
