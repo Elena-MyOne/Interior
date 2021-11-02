@@ -7,7 +7,7 @@ $(document).ready(function(){
 
 $(function() {
 	$(window).on("scroll", function() {
-		 if($(window).scrollTop() > 800) {
+		 if($(window).scrollTop() > 50) {
 			  $(".header").addClass("changeBgc");
 			  $(".header").removeClass("marginHeader");
 		 } else {
