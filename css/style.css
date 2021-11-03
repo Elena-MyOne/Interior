@@ -1826,6 +1826,136 @@ footer .footer__social img {
   }
 }
 
+.location {
+  padding: 70px 0px 122px 0px;
+}
+
+@media (max-width: 479.98px) {
+  .location {
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+.location__body {
+  width: 360px;
+  height: 370px;
+  opacity: 0.9;
+  border: 1px solid #9c9c9c;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@media (max-width: 1100px) {
+  .location__body {
+    width: 260px;
+  }
+}
+
+@media (max-width: 992.98px) {
+  .location__body {
+    width: 350px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .location__body {
+    width: 300px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .location__body {
+    height: 250px;
+  }
+}
+
+.location__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+  .location__row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.location__column {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 33.333%;
+          flex: 1 1 33.333%;
+}
+
+@media (max-width: 992.98px) {
+  .location__column {
+    margin: 0px 0px 15px 0px;
+  }
+}
+
+.location__icon {
+  width: 100%;
+  text-align: center;
+  padding: 45px 0px 0px 0px;
+}
+
+.location__icon img {
+  display: inline-block;
+}
+
+@media (max-width: 479.98px) {
+  .location__icon img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .location__icon {
+    padding: 15px 0px 0px 0px;
+  }
+}
+
+.location__title {
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212121;
+  padding: 25px 0px 0px 0px;
+}
+
+@media (max-width: 479.98px) {
+  .location__title {
+    padding: 10px 0px 0px 0px;
+  }
+}
+
+.location__subtitle {
+  font-weight: 700;
+  color: #6c6c6c;
+  padding: 15px 0px 0px 0px;
+}
+
+@media (max-width: 479.98px) {
+  .location__subtitle {
+    padding: 10px 0px 0px 0px;
+  }
+}
+
+.location__info {
+  color: #212121;
+  font-weight: 700;
+}
+
 * {
   padding: 0;
   margin: 0;

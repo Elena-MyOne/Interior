@@ -20,3 +20,90 @@ background-color: $pageTitleBgc;
 		}
 	}
 }
+
+//block 2 -location======================================
+.location {
+padding:  70px 0px 122px 0px;
+@media (max-width: $md4+px){
+	padding:  20px 0px 20px 0px;
+}
+	&__body {
+		width: 360px;
+		height: 370px;
+		opacity: 0.9;
+		border: 1px solid #9c9c9c;
+		text-align: center;
+		font-size: 14px;
+		line-height: 20px;
+		@media (max-width: 1100px){
+			width: 260px;
+		}
+		@media (max-width: $md2+px){
+			width: 350px;
+		}
+		@media (max-width: $md3+px){
+			width: 300px;
+		}
+		@media (max-width: $md4+px){
+			height: 250px;
+		}
+	}
+	&__row {
+		@include flexbox();
+		justify-content: space-between;
+		flex-wrap: wrap;
+		@media (max-width: $md3+px){
+			justify-content: center;
+		}
+	}
+	&__column {
+		flex: 1 1 33.333%;
+		@media (max-width: $md2+px){
+			margin: 0px 0px 15px 0px;
+		}
+	}
+	&__icon {
+		width: 100%;
+		text-align: center;
+		padding:  45px 0px 0px 0px;
+		img {
+			display: inline-block;
+			@media (max-width: $md4+px){
+				width: 25px;
+			}
+		}
+		@media (max-width: $md4+px){
+			padding:  15px 0px 0px 0px;
+		}
+	}
+	&__title {
+		font-size: 22px;
+		line-height: 29px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: $textColor;
+		padding:  25px 0px 0px 0px;
+		@media (max-width: $md4+px){
+			padding:  10px 0px 0px 0px;
+		}
+	}
+	&__content {
+	}
+
+	&__subtitle {
+		font-weight: 700;
+		color: $textContent;
+		padding:  15px 0px 0px 0px;
+		@media (max-width: $md4+px){
+			padding:  10px 0px 0px 0px;
+		}
+	}
+
+	&__info {
+		color: $textColor;
+		font-weight: 700;
+	}
+
+	&__address {
+	}
+}
