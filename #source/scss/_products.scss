@@ -1,1 +1,91 @@
+.breadcr {
+	padding: 70px 0px;
+	@media (max-width: $md3+px){
+		padding: 40px 0px;
+	}
+	@media (max-width: $md4+px){
+		padding: 40px 0px 0px 0px;
+	}
+	&__list {
+		@include flexbox();
+		flex-wrap: wrap;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "";
+			background-color: $textColor;
+			height: 1px;
+			width: 273px;
+			top: 35px;
+			left: -5px;
+			@media (max-width: $md3+px){
+				top: 30px;
+				width: 150px;
+			}
+			@media (max-width: $md4+px){
+				display: none;
+			}
+		}
+	}
+	&__link {
+		a{
+			font-size: 16px;
+			line-height: 1.2;
+			font-weight: 700;
+			text-transform: uppercase;
+			letter-spacing: 0.1em;
+			color: $textContent;
+			@media (max-width: $md3+px){
+				font-size: 14px;
+				line-height: 1;
+			}
+		}
+			margin: 0px 32px 0px 0px;
+			@media (max-width: $md3+px){
+				margin: 0px 15px 0px 0px;
+			}
+			@media (max-width: $md4+px){
+				margin: 0px 10px 30px 0px;
+			}
+		}
+	&__link-active {
+		position: relative;
+		a {
+			color: $textColor;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			background-color: $textColor;
+			height: 3px;
+			width: 65px;
+			top: 33px;
+			left: -5px;
+			@media (max-width: $md3+px){
+				width: 50px;
+				top: 28px;
+			}
+			@media (max-width: $md4+px){
+				top: 23px;
+			}
+		}
+	}
+}
 
+.load {
+	&__body {
+		padding: 40px 0px 20px 0px;
+		text-align: center;
+		@media (max-width: $md2+px){
+			padding: 10px 0px 0px 0px;
+		}
+	}
+	&__img {
+		img {
+			display: inline-block;
+			@media (max-width: $md3+px){
+				width: 30px;
+			}
+		}
+	}
+}

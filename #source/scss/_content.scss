@@ -374,7 +374,7 @@ margin: 120px 0px 0px 0px;
 		padding: 10px 0px 10px 0px;
 	}
 	&__text {
-		height: 50px;
+		height: 48px;
 		overflow: hidden;
 		margin: 0px 200px 0px 0px;
 		@media (max-width: 1370px){
@@ -394,16 +394,16 @@ margin: 120px 0px 0px 0px;
 .promo--1 {
 	background: url("../img/3/promo-1.png") right no-repeat;
 	@media (max-width: 1250px){
-		background: url("../img/3/promo-1.png") right/contain no-repeat;
+		background: url("../img/3/promo-1.png") right/cover no-repeat;
 	}
 	@media (max-width: 683px){
-		background: url("../img/3/promo-1.png") 0 0/100% auto no-repeat;
+		background: url("../img/3/promo-1.png") 0 0/cover no-repeat;
 	}
 }
 .promo--2 {
 	background: url("../img/3/promo-2.png") left no-repeat;
 	@media (max-width: 1250px){
-		background: url("../img/3/promo-2.png")  left/contain no-repeat;
+		background: url("../img/3/promo-2.png")  left/cover no-repeat;
 	}
 	@media (max-width: 683px){
 		display: none;
