@@ -413,11 +413,12 @@ margin: 120px 0px 0px 0px;
 //block 4 - trending=========================================
 
 .trending {
-	margin: 120px 0px 0px 0px;
+	&__body {
+		margin: 120px 0px 0px 0px;
 	@media (max-width: $md3+px){
 		margin: 40px 0px 0px 0px;
 	}
-
+	}
 	&__row {
 		@include flexbox();
 		justify-content: space-between;

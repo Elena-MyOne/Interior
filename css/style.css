@@ -966,12 +966,12 @@ nav {
   }
 }
 
-.trending {
+.trending__body {
   margin: 120px 0px 0px 0px;
 }
 
 @media (max-width: 767.98px) {
-  .trending {
+  .trending__body {
     margin: 40px 0px 0px 0px;
   }
 }
