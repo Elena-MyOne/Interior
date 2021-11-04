@@ -163,9 +163,45 @@ header{}
 		height: 3px;
 		width: 74px;
 		left: -13px;
-		top: 26px;
+		top: 24px;
 		@media (max-width: $md3+px){
 			width: 67px;
+		}
+	}
+}
+
+.active__link-contact{
+	font-weight: 700;
+	color: $textColor;
+	position: relative;
+	&::after{
+		position: absolute;
+		content: '';
+		background-color: $textColor;
+		height: 3px;
+		width: 83px;
+		left: -2px;
+		top: 24px;
+		@media (max-width: $md3+px){
+			width: 83px;
+		}
+	}
+}
+
+.active__link-products {
+	font-weight: 700;
+	color: $textColor;
+	position: relative;
+	&::after{
+		position: absolute;
+		content: '';
+		background-color: $textColor;
+		height: 3px;
+		width: 96px;
+		left: -2px;
+		top: 24px;
+		@media (max-width: $md3+px){
+			width: 95px;
 		}
 	}
 }
